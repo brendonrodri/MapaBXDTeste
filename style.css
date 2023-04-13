@@ -5,7 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #262636;
+}
 .header{
     display: flex;
     height: 15vh;
@@ -38,4 +40,52 @@
     font-size: 1.7rem;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
+}
+.mainContainer{
+    margin: 5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+.mapDescriptionSection{
+    width: 45%;
+    height: 68vh;
+}
+
+.titleContainer{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.descTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+} 
+.descSubTitle{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.descParagraph{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.buttonDescription{
+    width: 10vw;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+}
+.buttonDescription:hover{
+    transform: scale(1.1);
+}
+.buttonLink{
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #000;
+
 }
