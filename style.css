@@ -1,112 +1,132 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #262636;
     color: #eeeeee;
 }
-.header{
+
+.header {
     display: flex;
     height: 15vh;
     border-bottom: 2px solid;
     margin: 0 4rem;
 
 }
-.logo{
+
+.logo {
     width: 10vw;
 }
-.logoBox{
+
+.logoBox {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.menuNav{
+
+.menuNav {
     width: 65%;
     display: flex;
     justify-content: center;
 }
-.menuList{
+
+.menuList {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
 }
-.menuItem{
+
+.menuItem {
     list-style: none;
     font-size: 1.7rem;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
-.mainContainer{
+
+.mainContainer {
     margin: 3rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70vh;
 }
-.mapDescriptionSection{
+
+.mapDescriptionSection {
     width: 45%;
     height: 68vh;
     margin-bottom: 3rem;
 }
 
-.titleContainer{
+.titleContainer {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.descTitle{
+
+.descTitle {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-} 
-.descSubTitle{
-    font-family: 'Montserrat', sans-serif;
-    
+    animation: fadeInTitle 1s ease-in-out;
 }
-.descParagraph{
+
+.descSubTitle {
+    font-family: 'Montserrat', sans-serif;
+    animation: fadeInTitle 1s ease-in-out;
+
+}
+
+.descParagraph {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
     text-align: justify;
+    animation: fadeInParagraph 1s ease-in-out;
 }
 
-.buttonDescription{
+.buttonDescription {
     width: 10vw;
     height: 6vh;
     border-radius: 5px;
     border: none;
 }
-.buttonDescription:hover{
+
+.buttonDescription:hover {
     transform: scale(1.1);
 }
-.buttonLink{
+
+.buttonLink {
     text-decoration: none;
     font-size: .9rem;
     font-weight: 600;
     color: #000;
 
 }
-.footer{
+
+.footer {
     height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid ;
+    border-top: 2px solid;
     margin: 3rem 4rem;
 }
-.footerTitle{
+
+.footerTitle {
     margin: 1rem 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
 }
-.footerContatcsList{
+
+.footerContatcsList {
     display: flex;
     justify-content: space-evenly;
     width: 45%;
@@ -115,12 +135,36 @@ body{
     font-size: 1.2rem;
     font-weight: 600;
 }
-.footerContatcsList li:hover{
+
+.footerContatcsList li:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-.footerText{
+
+.footerText {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     margin: 1rem 0;
+}
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInParagraph {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
