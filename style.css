@@ -115,6 +115,10 @@ body{
     font-size: 1.2rem;
     font-weight: 600;
 }
+.footerContatcsList li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .footerText{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
