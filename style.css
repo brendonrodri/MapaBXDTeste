@@ -14,7 +14,7 @@ body {
 .header {
     display: flex;
     height: 15vh;
-    border-bottom: 2px solid;
+    /* border-bottom: 2px solid; */
     margin: 0 4rem;
 
 }
@@ -55,12 +55,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .mapDescriptionSection {
     width: 45%;
-    height: 68vh;
+    /* height: 68vh; */
     margin-bottom: 3rem;
 }
 
@@ -68,7 +68,8 @@ body {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    gap: 24px;
 }
 
 .descTitle {
@@ -96,6 +97,7 @@ body {
     height: 6vh;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .buttonDescription:hover {
@@ -111,12 +113,12 @@ body {
 }
 
 .footer {
-    height: 30vh;
+    /* height: 30vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid;
+    /* border-top: 2px solid; */
     margin: 3rem 4rem;
 }
 
@@ -143,7 +145,7 @@ body {
 
 .footerText {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     margin: 1rem 0;
 }
 @keyframes fadeInTitle {
