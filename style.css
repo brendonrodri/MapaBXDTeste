@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+html, body {
+    height: 100%;
+}
 
 body {
     background-color: #262636;
+    display: flex;
+    flex-direction: column;
     color: #eeeeee;
+    max-width: 1200px;
+    min-width: 1200px;
 }
 
 .header {
@@ -18,7 +32,7 @@ body {
 }
 
 .logo {
-    width: 10vw;
+    width: 80px;
 }
 
 .logoBox {
@@ -52,14 +66,28 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 80px;
-    margin-top: 40px;
+    flex: 1;
 }
 
 .mapDescriptionSection {
-    width: 45%;
+    width: 60%;
     /* height: 68vh; */
     margin-bottom: 3rem;
 }
+
+.mapDescriptionSectionRight {
+    width: 40%;
+    height: 500px;
+    animation: fadeInShape 1s ease-in-out;
+
+    width: 1080px;
+    height: 500px;
+    background-image: url("./assets/shapebxd_resized.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: -40%;
+}   
 
 .titleContainer {
     display: flex;
@@ -90,8 +118,8 @@ body {
 }
 
 .buttonDescription {
-    width: 10vw;
-    height: 6vh;
+    height: 64px;
+    width: 128px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -115,13 +143,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px 0;
     /* border-top: 2px solid; */
 }
 
 .footerTitle {
     margin: 1rem 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 .footerContatcsList {
@@ -159,6 +188,17 @@ body {
     from {
         opacity: 0;
         transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInShape{
+    from {
+        opacity: 0;
+        transform: translateX(100px);
     }
 
     to {
